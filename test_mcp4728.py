@@ -8,7 +8,7 @@ dac_x4.set_power_down(channel=0, pd=0) # this is how you enable and disable chan
 dac_x4.multi_write(ch0=True)
 dac_x4.read_and_print()
 dac_x4.ch1_gain = 1 # vref also set to 1 when we write to gain
-dac_x4.ch1_pd   = 0 # directly update the configureation value
+dac_x4.ch1_pd   = 0 # directly update the configuration value
 dac_x4.ch1_vout = 3.8
 dac_x4.single_write(channel=1)
 dac_x4.read_and_print() # read from the part and print out configuration in easy-to-read format
