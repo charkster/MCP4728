@@ -59,6 +59,10 @@ class MCP4728 :
 		self.ch1_cfg_byte  = 0x00
 		self.ch2_cfg_byte  = 0x00
 		self.ch3_cfg_byte  = 0x00
+		self.ch0_cfg_fast_byte = 0x00
+		self.ch1_cfg_fast_byte = 0x00
+		self.ch2_cfg_fast_byte = 0x00
+		self.ch3_cfg_fast_byte = 0x00
 		self.ch0_dac_byte  = 0x00
 		self.ch1_dac_byte  = 0x00
 		self.ch2_dac_byte  = 0x00
