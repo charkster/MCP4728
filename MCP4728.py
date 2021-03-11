@@ -279,8 +279,8 @@ class MCP4728 :
 		if (channel > 4 or channel < 0):
 			print("Channel must be 0, 1, 2, or 3")
 			return -1
-		if (vcc < 0.0 or vcc > __MAX_EXT_VCC):
-			print("External Vcc must be between 0 and {:.2f}V".format(__MAX_EXT_VCC))
+		if (vcc < 0.0 or vcc > self.__MAX_EXT_VCC):
+			print("External Vcc must be between 0 and {:.2f}V".format(self.__MAX_EXT_VCC))
 			return -1
 		if (channel == 0):
 			self.ch0_ext_vcc = vcc
